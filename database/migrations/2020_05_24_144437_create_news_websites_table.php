@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateNewsCategoriesTable extends Migration
+class CreateNewsWebsitesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class CreateNewsCategoriesTable extends Migration
     public function up()
     {
         Schema::create('news_websites', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('website');
             $table->timestamps();
         });

@@ -19,10 +19,10 @@ class PostTableSeeder extends Seeder
 
         $second_post = new Post();
         $second_post->user_id = 2;
-        $first_post->category_id = 2;
-        $first_post->website_id = 2;        
+        $second_post->category_id = 1;
+        $second_post->website_id = 1;        
         $second_post->title = "Database: Migrations";
-        $second_post->body = "Migrations are like version control for your database, allowing your team to easily modify and share the application's database schema. Migrations are typically paired with Laravel's schema builder to easily build your application's database schema. If you have ever had to tell a teammate to manually add a column to their local database schema, you've faced the problem that database migrations solve.";
+        $second_post->body = "Migrations are like version control for your database";
         $second_post->save();
     }
 }
